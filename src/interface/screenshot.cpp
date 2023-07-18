@@ -31,6 +31,7 @@
 
 void takeScreenshot(const char* output_path)
 {
+	/*
 	char filename[PATH_MAX];
 	SDL_Surface* temp, *temp2;
 
@@ -66,4 +67,6 @@ void takeScreenshot(const char* output_path)
 	{
 		printlog("%s", filename);
 	}
+	*/
+	printlog("Disabled Save to PNG");
 }

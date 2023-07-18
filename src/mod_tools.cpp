@@ -4470,18 +4470,20 @@ void GlyphRenderer_t::renderGlyphsToPNGs()
 					writePath.erase((size_t)0, (size_t)1);
 				}
 
-				if ( SDL_SavePNG(sprite, writePath.c_str()) == 0 )
-				{
-					printlog("[Glyph Export]: Successfully exported unpressed glyph: %s | path: %s", keyValue.second.keyname.c_str(), writePath.c_str());
-				}
-				else
+				//if ( SDL_SavePNG(sprite, writePath.c_str()) == 0 )
+				//{
+					//printlog("[Glyph Export]: Successfully exported unpressed glyph: %s | path: %s", keyValue.second.keyname.c_str(), writePath.c_str());
+				printlog("Disabled Save to PNG");
+				//}
+				/*else
 				{
 					printlog("[Glyph Export]: Failed exporting unpressed glyph: %s | path: %s", keyValue.second.keyname.c_str(), writePath.c_str());
-				}
+				}*/
 			}
 			else
 			{
-				printlog("[Glyph Export]: Failed exporting unpressed glyph: %s", keyValue.second.keyname.c_str());
+				//printlog("[Glyph Export]: Failed exporting unpressed glyph: %s", keyValue.second.keyname.c_str());
+				printlog("Disabled Save to PNG");
 				++errors;
 			}
 			if ( sprite )
@@ -4529,18 +4531,20 @@ void GlyphRenderer_t::renderGlyphsToPNGs()
 					writePath.erase((size_t)0, (size_t)1);
 				}
 
-				if ( SDL_SavePNG(sprite, writePath.c_str()) == 0 )
-				{
-					printlog("[Glyph Export]: Successfully exported pressed glyph: %s | path: %s", keyValue.second.keyname.c_str(), writePath.c_str());
-				}
-				else
-				{
-					printlog("[Glyph Export]: Failed exporting pressed glyph: %s | path: %s", keyValue.second.keyname.c_str(), writePath.c_str());
-				}
+				//if ( SDL_SavePNG(sprite, writePath.c_str()) == 0 )
+				//{
+					//printlog("[Glyph Export]: Successfully exported pressed glyph: %s | path: %s", keyValue.second.keyname.c_str(), writePath.c_str());
+					printlog("Disabled Save to PNG");
+				//}
+				//else
+				//{
+					//printlog("[Glyph Export]: Failed exporting pressed glyph: %s | path: %s", keyValue.second.keyname.c_str(), writePath.c_str());
+				//}
 			}
 			else
 			{
-				printlog("[Glyph Export]: Failed exporting pressed glyph: %s", keyValue.second.keyname.c_str());
+				//printlog("[Glyph Export]: Failed exporting pressed glyph: %s", keyValue.second.keyname.c_str());
+				printlog("Disabled Save to PNG");
 				++errors;
 			}
 			if ( sprite )
