@@ -20,6 +20,9 @@ build/*
 src/Config.hpp
 .buildconfig
 steam_appid.txt
+!/VS-includes/Config.hpp
+/VS-libs/*
+/VS.2022
 *.o
 *.exe
 *.ffs_db
@@ -27,12 +30,8 @@ steam_appid.txt
 *.tlog
 *.psess
 *.vspx
-/VS-includes
-!/VS-includes/Config.hpp
-/VS-libs/*
 *.inl
 *.dll
-/VS.2015/.vs/Barony/v14
 *.iobj
 *.idb
 *.ipdb
@@ -46,22 +45,11 @@ steam_appid.txt
 *.res
 *.lnk
 *.xml
-/VS.2015/Beta/Release
-/VS.2015/Debug
-/VS.2015/EOS Debug
-/VS.2015/EOS
-/VS.2015/EOS 3
-/VS.2015/EOS 4
-/VS.2015/Steam Crossplay
 *.db
 *.opendb
-/VS.2015/Release/
 *.lib
 *.exp
-/VS.2015/x64/Steam Crossplay
 *.vsp
-/VS.2015/Steam Debug
-/VS.2015/enc_temp_folder/*
 .vscode/*
 **/v17
 **/v16
